@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/whole_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6sp"
+    android:layout_marginTop="55dp"
+    android:layout_marginRight="6sp"
+    android:background="@drawable/card_bg"
+    android:orientation="vertical"
+    android:padding="5sp">
+
+
+    <ImageView
+        android:id="@+id/movie_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/movie_name_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="MovieName"
+        android:textColor="@color/title_text_color"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/realease_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6sp"
+        android:gravity="center"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="RealeaseDate"
+        android:textColor="#000000" />
+
+    <TextView
+
+        android:id="@+id/description_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6sp"
+        android:background="@drawable/card_bg"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp"
+        android:text="Description"
+        android:textColor="@color/content_text_color"
+        android:textSize="10sp" />
+</LinearLayout>

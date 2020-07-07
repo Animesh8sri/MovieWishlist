@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MovieDetailsPage">
+
+    <LinearLayout
+        android:padding="5sp"
+        android:id="@+id/linear_layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:padding="5sp"
+            android:id="@+id/backdrop_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/linear_layout_image"
+        android:layout_alignBottom="@+id/linear_layout_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5sp">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/poster_image_view"
+            app:backgroundTint="#3CA4F3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/release_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_layout_image"
+        android:gravity="center"
+        android:text="Release Date"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/poster_image_view"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/release_date_text_view"
+        android:layout_marginTop="5sp"
+        android:padding="6sp"
+        android:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/rating_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating"
+        android:layout_toEndOf="@+id/poster_image_view"
+        android:layout_below="@+id/release_date_text_view"
+        android:layout_margin="6sp"
+        android:gravity="center"
+        android:textSize="60sp"
+        android:layout_alignTop="@+id/poster_image_view"
+        android:layout_alignBottom="@+id/poster_image_view"/>
+
+
+
+
+
+</RelativeLayout>

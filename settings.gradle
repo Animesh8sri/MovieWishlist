@@ -1,0 +1,2 @@
+rootProject.name='MovieWishlist'
+include ':app'
